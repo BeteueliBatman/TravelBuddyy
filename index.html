@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Finals Project</title>
+  </head>
+  <body>
+    <!-- Cookie shetkopinebebi -->
+    <div class="cookie-notification" id="cookieNotification">
+      <div class="cookie-text">
+        ჩვენ ვიყენებთ ქუქიებს, თქვენი გამოცდილების გასაუმჯობესებლად. საიტის
+        გამოყენების გაგრძელებით თქვენ ეთანხმებით ქუქიების გამოყენებას.
+      </div>
+      <button class="cookie-button" onclick="acceptCookies()">
+        თანახმა ვარ
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <a href="#" class="logo">TravelBuddy</a>
+        <ul class="nav-links">
+          <li><a href="#hero">მთავარი</a></li>
+          <li><a href="#about">ჩვენს შესახებ</a></li>
+          <li><a href="#destinations">ლოკაციები</a></li>
+          <li><a href="#weather">ამინდი</a></li>
+          <li><a href="#contact">კონტაქტი</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="hero"
+      style="
+        height: 100vh;
+        background: url('img/travel-laptop-0m6r2w9ywrwtb81n.jpg') center/cover
+          no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      "
+    >
+      <div class="hero-content animate__animated animate__fadeInUp">
+        <h1>აღმოაჩინე სამყარო TravelBuddy-სთან ერთად</h1>
+        <p id="YUM">
+          შეუერთდი მოგზაურების საზოგადოებას და იპოვე შენი სასურველი წერტილი
+        </p>
+        <a href="#contact" class="cta-button">დაიწყე მოგზაურობა</a>
+      </div>
+    </section>
+
+    <!-- About seqcia -->
+    <section id="about">
+      <div class="fade-in">
+        <h2 class="section-title">ჩვენ შესახებ</h2>
+        <p class="section-subtitle">
+          TravelBuddy არის მოგზაურების საზოგადოება, რომელიც ეხმარება ადამიანებს
+          იპოვონ საუკეთესო ადგილები და გამოცდილებები
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🌍</div>
+          <h3>გლობალური ადგილები</h3>
+          <p>აღმოაჩინე ყველაზე საინტერესო წერტილები მთელ მსოფლიოში</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">👥</div>
+          <h3>საზოგადოება</h3>
+          <p>შეუერთდი მოგზაურების საზოგადოებას და გაზიარე შენი გამოცდილება</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📱</div>
+          <h3>მარტივი გამოყენება</h3>
+          <p>ინტუიციური ინტერფეისი, რომელიც ხელს უწყობს შენს მოგზაურობას</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- popularuli adgilebis seqcia -->
+    <section id="destinations">
+      <div class="destinations-container">
+        <div class="fade-in">
+          <h2 class="section-title">პოპულარული ადგილები</h2>
+          <p class="section-subtitle">
+            იპოვე შენი სასურველი დანიშნულების ადგილი
+          </p>
+        </div>
+
+        <div class="destinations-grid" id="destinationsGrid">
+          <div class="destination-card fade-in">
+            <div
+              class="destination-image"
+              style="
+                background: url('img/tbilisi.jpg') center/cover no-repeat;
+                height: 200px;
+              "
+            ></div>
+            <div class="destination-info">
+              <h3>თბილისი</h3>
+              <p>
+                საქართველოს დედაქალაქი, რომელიც შერწყმულია ისტორიულ და
+                თანამედროვე ცხოვრების სტილს
+              </p>
+            </div>
+          </div>
+          <div class="destination-card fade-in">
+            <div
+              class="destination-image"
+              style="
+                background: url('img/batumi.jpg') center/cover no-repeat;
+                height: 200px;
+              "
+            ></div>
+            <div class="destination-info">
+              <h3>ბათუმი</h3>
+              <p>
+                შავი ზღვის მარგალიტი, რომელიც ცნობილია თავისი უნიკალური
+                არქიტექტურითა და ღამის ცხოვრებით
+              </p>
+            </div>
+          </div>
+          <div class="destination-card fade-in">
+            <div
+              class="destination-image"
+              style="
+                background: url('img/historical-monuments-of-mtskheta-gnta.webp')
+                  center/cover no-repeat;
+                height: 200px;
+              "
+            ></div>
+            <div class="destination-info">
+              <h3>მცხეთა</h3>
+              <p>
+                საქართველოს ძველი დედაქალაქი, რომელიც UNESCO-ს მსოფლიო
+                მემკვიდრეობის ძეგლია
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- amindis seqcia -->
+    <section id="weather">
+      <div class="fade-in">
+        <h2 class="section-title">ამინდის ინფორმაცია</h2>
+        <p class="section-subtitle">შეამოწმე ამინდი შენს სასურველ ქალაქში</p>
+      </div>
+
+      <div class="weather-widget">
+        <input
+          type="text"
+          id="cityInput"
+          class="weather-input"
+          placeholder="შეიყვანე ქალაქის სახელი"
+        />
+        <button class="weather-button" onclick="getWeather()">
+          ამინდის შემოწმება
+        </button>
+        <div id="weatherResult" class="weather-result"></div>
+      </div>
+    </section>
+
+    <!-- sakontakto seqcia -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="fade-in">
+          <h2 class="section-title">დაგვიკავშირდით</h2>
+          <p class="section-subtitle">
+            შეუერთდი ჩვენს საზოგადოებას და დაიწყე შენი მოგზაურობა
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">სახელი *</label>
+            <input type="text" id="name" name="name" required />
+            <div class="error-message" id="nameError">სახელი აუცილებელია</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">ელ-ფოსტა *</label>
+            <input type="email" id="email" name="email" required />
+            <div class="error-message" id="emailError">
+              ელ-ფოსტა არასწორი ფორმატშია
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">ტელეფონი *</label>
+            <input type="tel" id="phone" name="phone" required />
+            <div class="error-message" id="phoneError">
+              ტელეფონი აუცილებელია
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">პაროლი *</label>
+            <div class="password-container">
+              <input type="password" id="password" name="password" required />
+              <button
+                type="button"
+                class="password-toggle"
+                onclick="togglePassword()"
+              >
+                👁️
+              </button>
+            </div>
+            <div class="error-message" id="passwordError">
+              პაროლი უნდა შეიცავდეს მინიმუმ 8 სიმბოლოს
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">შეტყობინება</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="თქვენი შეტყობინება..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">გაგზავნა</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#hero">მთავარი</a>
+          <a href="#about">ჩვენს შესახებ</a>
+          <a href="#destinations">ლოკაციები</a>
+          <a href="#contact">კონტაქტი</a>
+        </div>
+        <p>&copy; 2024 TravelBuddy. ყველა უფლება დაცულია.</p>
+      </div>
+    </footer>
+
+    <!-- zemot asasqroli ghilaki -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
